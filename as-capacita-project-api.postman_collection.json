@@ -1,0 +1,115 @@
+{
+	"variables": [],
+	"info": {
+		"name": "as-capacita-project-api",
+		"_postman_id": "a35a5acb-ff67-7fd9-9e86-5483151e0b9c",
+		"description": "API REST com Phalcon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/",
+			"request": {
+				"url": "agenciasys:1100/",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Rota raiz da API"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar produtos",
+			"request": {
+				"url": "192.168.115.79:8080/v1/produtos/1",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Produto",
+			"request": {
+				"url": "192.168.115.79:8080/v1/produtos",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar produto",
+			"request": {
+				"url": "192.168.115.79:8080/v1/produtos",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nmProduto",
+							"value": "batatao",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "vlProduto",
+							"value": "1.99",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Editar produto",
+			"request": {
+				"url": "192.168.115.79:8080/v1/produtos/1",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nmProduto",
+							"value": "Alface",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "Edita um usuário no banco de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Produto",
+			"request": {
+				"url": "192.168.115.79:8080/v1/produtos/6",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
